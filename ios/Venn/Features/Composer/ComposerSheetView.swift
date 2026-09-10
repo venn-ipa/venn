@@ -156,7 +156,7 @@ private struct ComposerCandidateView: View {
             case let .success(image):
                 image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .scaledToFill()
             default:
                 Image(systemName: candidate.kind.systemImage)
                     .font(.largeTitle)

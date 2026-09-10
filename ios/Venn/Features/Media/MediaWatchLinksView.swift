@@ -67,7 +67,7 @@ struct MediaWatchLinksView: View {
         HStack(spacing: Theme.Spacing.sm) {
             if let logoURL = link.logoURL {
                 AsyncImage(url: logoURL) { image in
-                    image.resizable().aspectRatio(contentMode: .fit)
+                    image.resizable().scaledToFit()
                 } placeholder: {
                     SwiftUI.Color.clear
                 }

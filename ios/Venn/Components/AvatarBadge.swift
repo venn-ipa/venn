@@ -26,7 +26,7 @@ struct AvatarBadge: View {
                         if case let .success(image) = phase {
                             image
                                 .resizable()
-                                .aspectRatio(contentMode: .fill)
+                                .scaledToFill()
                                 .frame(width: size, height: size)
                                 .clipShape(Circle())
                                 .transition(.opacity)

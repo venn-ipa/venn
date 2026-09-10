@@ -41,7 +41,7 @@ struct MediaCoverTile: View {
                 GeometryReader { proxy in
                     image
                         .resizable()
-                        .aspectRatio(contentMode: .fill)
+                        .scaledToFill()
                         .frame(width: proxy.size.width, height: proxy.size.height)
                 }
                 .transition(.opacity)
