@@ -112,7 +112,7 @@ struct ProfileEditView: View {
             if let pickedPreview {
                 Image(uiImage: pickedPreview)
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .scaledToFill()
                     .frame(width: 72, height: 72)
                     .clipShape(Circle())
             } else {

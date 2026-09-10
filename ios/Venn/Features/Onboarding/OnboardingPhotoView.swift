@@ -41,7 +41,7 @@ struct OnboardingPhotoView: View {
                                 if let preview {
                                     Image(uiImage: preview)
                                         .resizable()
-                                        .aspectRatio(contentMode: .fill)
+                                        .scaledToFill()
                                         .frame(width: 140, height: 140)
                                         .clipShape(Circle())
                                 } else {
